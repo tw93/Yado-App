@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussions / 提问与讨论
+    url: https://github.com/tw93/Yado-App/discussions
+    about: Ask a question or share how you use Yado / 提问或交流 Yado 的用法
+  - name: Purchase and activation support / 购买与激活
+    url: https://github.com/tw93/Yado-App#feedback
+    about: Email hi@yado.house for purchase, activation and refund help / 购买、激活和退款发邮件到 hi@yado.house
+  - name: Security reports / 安全问题
+    url: https://github.com/tw93/Yado-App/blob/main/.github/SECURITY.md
+    about: Send security details privately / 安全问题私下反馈

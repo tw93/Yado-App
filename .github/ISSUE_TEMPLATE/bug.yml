@@ -1,0 +1,64 @@
+name: Bug report / 问题反馈
+description: Report a problem with Yado / 反馈 Yado 的问题
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report a problem with **Yado**. Your feedback helps improve the app.
+
+        这里用于反馈 **Yado** 的问题，你的反馈能帮助我把 App 做得更好。
+
+        Before reporting, use Check for Updates to get the latest version, reopen Yado and check whether the problem still occurs. Issues are public. For purchase, activation or refund questions, email **hi@yado.house**, and keep license keys, phone numbers and personal photos out of screenshots.
+
+        反馈前先用「检查更新」更新到最新版，重新打开 Yado，确认问题是否还在。Issue 是公开的，购买、激活或退款问题发到 **hi@yado.house**，截图里不要露出授权码、手机号和私人照片。
+  - type: input
+    id: app-version
+    attributes:
+      label: Yado version / Yado 版本
+      description: Shown in About Yado / 在「关于 Yado」里查看
+      placeholder: "1.8.0 (25)"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version and Mac / macOS 版本和机型
+      placeholder: macOS 15.6, MacBook Air M2
+    validations:
+      required: true
+  - type: input
+    id: iphone
+    attributes:
+      label: iPhone model and iOS version / iPhone 机型和 iOS 版本
+      placeholder: iPhone 15 Pro, iOS 26.1
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection / 连接方式
+      options:
+        - Cable / 数据线
+        - Wi-Fi
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / 遇到了什么问题？
+      description: Describe what happened and what you expected / 说明实际发生的情况和预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: How can I reproduce this? If it is intermittent, say so / 说明怎样触发，偶发问题也可以注明
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs / 截图或日志
+      description: Optional. Remove personal information before attaching files / 可选，上传前移除个人信息
